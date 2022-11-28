@@ -196,13 +196,13 @@
 // }
 // callingCode();
 
-function lotr() {
-  fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
-    .then((response) => response.json())
-    .then((data) => {
-      let jokey = document.createElement("div");
-      jokey.innerHTML = `${data.setup} ....... ${data.delivery}`;
-      document.body.appendChild(jokey);
-    });
-}
-lotr();
+// function lotr() {
+//   fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       let jokey = document.createElement("div");
+//       jokey.innerHTML = `${data.setup} ....... ${data.delivery}`;
+//       document.body.appendChild(jokey);
+//     });
+// }
+// lotr();
