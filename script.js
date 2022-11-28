@@ -138,3 +138,19 @@
 // chuckSport();
 
 //REST-COUNTRIES-API
+//1. Hämta information om sverige. Presentera Namn, population, tidszon och flaggan.
+function swe() {
+  fetch("https://restcountries.com/v2/name/sweden")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      let sweDiv = document.createElement("div");
+      sweDiv.innerHTML = `<div>${data[0].name}</div><hr><div>${
+        data[0].population
+      }</div><hr><div>${
+        data[0].timezones
+      }<hr></div><img src="${"https://flagcdn.com/se.svg"}">`;
+      document.body.appendChild(sweDiv);
+    });
+}
+swe();
