@@ -139,18 +139,59 @@
 
 //REST-COUNTRIES-API
 //1. Hämta information om sverige. Presentera Namn, population, tidszon och flaggan.
-function swe() {
-  fetch("https://restcountries.com/v2/name/sweden")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      let sweDiv = document.createElement("div");
-      sweDiv.innerHTML = `<div>${data[0].name}</div><hr><div>${
-        data[0].population
-      }</div><hr><div>${
-        data[0].timezones
-      }<hr></div><img src="${"https://flagcdn.com/se.svg"}">`;
-      document.body.appendChild(sweDiv);
-    });
-}
-swe();
+// function swe() {
+//   fetch("https://restcountries.com/v2/name/sweden")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data);
+//       let sweDiv = document.createElement("div");
+//       sweDiv.innerHTML = `<div>${data[0].name}</div><hr><div>${
+//         data[0].population
+//       }</div><hr><div>${
+//         data[0].timezones
+//       }<hr></div><img src="${"https://flagcdn.com/se.svg"}">`;
+//       document.body.appendChild(sweDiv);
+//     });
+// }
+// swe();
+
+//2. Hämta alla länder där man pratar finska. Visa namnet på landet på finska och flaggan.
+// function perkele() {
+//   fetch("https://restcountries.com/v2/lang/fi")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       let mumin = document.createElement("div");
+//       mumin.innerHTML = `<div>Finland in finnish: ${
+//         data[0].altSpellings[3]
+//       }</div><hr><img id="perkele" src="${"https://flagcdn.com/fi.svg"}" alt"blabla"/>`;
+//       document.body.appendChild(mumin);
+//       console.log(data);
+//     });
+// }
+// perkele();
+
+//3.Hämta info om landet som har Montevideo som huvudstad. Visa namnet på landet och Flaggan.
+// function montevideo() {
+//   fetch("https://restcountries.com/v2/capital/montevideo")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       let monteMont = document.createElement("div");
+//       monteMont.innerHTML = `${data[0].name} <img id="uru" src="https://flagcdn.com/uy.svg"/>`;
+//       document.body.appendChild(monteMont);
+//       console.log(data);
+//     });
+// }
+// montevideo();
+
+//4.Hämta info om landet med calling code 975. Visa native name och region.
+// function callingCode() {
+//   fetch("https://restcountries.com/v2/callingcode/975")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       let cody = document.createElement("div");
+//       cody.innerHTML = `${data[0].nativeName} <hr> ${data[0].region}`;
+//       document.body.appendChild(cody);
+//       console.log(data);
+//     });
+// }
+// callingCode();
