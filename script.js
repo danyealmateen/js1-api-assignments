@@ -57,11 +57,42 @@
 // beerInfo();
 
 //3. Hämta info om ett random öl och visa namnen på alla ingredienser i HTML-element.
-function oneMoreBeer() {
-  fetch("https://api.punkapi.com/v2/beers/random")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    });
-}
-oneMoreBeer();
+// function oneMoreBeer() {
+//   fetch("https://api.punkapi.com/v2/beers/random")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data);
+
+//       //forEach for ingredients
+//       data.forEach((ing) => {
+//         //forEach for hops
+//         ing.ingredients.hops.forEach((hoppi) => {
+//           let theHops = document.createElement("div");
+//           theHops.innerHTML = `<div id="hops">NAME OF HOPS:${hoppi.name}</div>`;
+//           document.body.appendChild(theHops);
+//           console.log(hoppi.name);
+//           //forEach for malt
+//           ing.ingredients.malt.forEach((malti) => {
+//             let theMaltis = document.createElement("div");
+//             theMaltis.innerHTML = `<div>NAME OF MALTS:${malti.name}</div>`;
+//             document.body.appendChild(theMaltis);
+//             console.log(malti.name);
+//           });
+//         });
+//       });
+//     });
+// }
+// oneMoreBeer();
+
+//4.Hämta info om ett öl som passar till Caramel toffee cake och presentera namn, tagline och image.
+// function caramelBeer() {
+//   fetch("https://api.punkapi.com/v2/beers")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data[0]);
+//       let showBeer = document.createElement("div");
+//       showBeer.innerHTML = `<div>${data[0].name}</div><hr><div>${data[0].tagline}</div><hr><img id="theImg" src="${data[0].image_url}"/>`;
+//       document.body.appendChild(showBeer);
+//     });
+// }
+// caramelBeer();

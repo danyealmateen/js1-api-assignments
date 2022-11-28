@@ -10,3 +10,16 @@
 #food {
   color: green;
 }
+
+#ingredients {
+  color: orange;
+}
+
+#hops {
+  color: purple;
+}
+
+#theImg {
+  width: 100px;
+  height: 100px;
+}
