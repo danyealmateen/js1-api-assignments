@@ -125,17 +125,16 @@
 // chuckFood();
 
 //3.Hämta ett random skämt i kategorin sport och visa det i ett html-element
-function chuckSport() {
-  fetch("https://api.chucknorris.io/jokes/random?category=sport")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      let sporty = document.createElement("div");
-      sporty.innerHTML = `${data.value}`;
-      document.body.appendChild(sporty);
-    });
-}
-chuckSport();
+// function chuckSport() {
+//   fetch("https://api.chucknorris.io/jokes/random?category=sport")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data);
+//       let sporty = document.createElement("div");
+//       sporty.innerHTML = `${data.value}`;
+//       document.body.appendChild(sporty);
+//     });
+// }
+// chuckSport();
 
 //REST-COUNTRIES-API
-
