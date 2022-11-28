@@ -96,3 +96,46 @@
 //     });
 // }
 // caramelBeer();
+
+//CHUCK-NORRIS-JOKES
+//1.Hämta ett random skämt och visa det i ett HTML-element.
+// function getChuck() {
+//   fetch("https://api.chucknorris.io/jokes/random")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data);
+//       let chuck = document.createElement("div");
+//       chuck.innerHTML = `${data.value}`;
+//       document.body.appendChild(chuck);
+//     });
+// }
+// getChuck();
+
+//2.Hämta ett random skämt i kategorin food och visa det i ett html-element
+// function chuckFood() {
+//   fetch("https://api.chucknorris.io/jokes/random?category=food")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       let chucky = document.createElement("div");
+//       chucky.innerHTML = `<div>${data.value}</div>`;
+//       document.body.appendChild(chucky);
+//       console.log(data);
+//     });
+// }
+// chuckFood();
+
+//3.Hämta ett random skämt i kategorin sport och visa det i ett html-element
+function chuckSport() {
+  fetch("https://api.chucknorris.io/jokes/random?category=sport")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      let sporty = document.createElement("div");
+      sporty.innerHTML = `${data.value}`;
+      document.body.appendChild(sporty);
+    });
+}
+chuckSport();
+
+//REST-COUNTRIES-API
+
